@@ -11,6 +11,9 @@ android {
         versionCode 1
         versionName "1.0"
 
+//        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -18,7 +21,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            renderscriptSupportModeEnabled true
+
         }
     }
 
